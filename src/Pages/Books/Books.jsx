@@ -21,7 +21,7 @@ const Books = ({data}) => {
         <div>
             <h1 className='text-4xl text-center p-6 font-bold'>Books</h1>
             <Suspense fallback={<span>Looding...</span>}>
-             <div className="grid grid-cols-1 md:grid-cols-3 pl-16 md:p-0 mb-10 gap-10">
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                   {
                 data.map((singleBook)=><Book key={singleBook.bookId} singleBook={singleBook}></Book>)
                }
